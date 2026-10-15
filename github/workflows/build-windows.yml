@@ -1,11 +1,9 @@
 name: Build Windows EXE
 
 on:
-  push:
-    branches: [ "main", "master" ]
+  push: # ירוץ בכל push לכל ענף שהוא
   pull_request:
-    branches: [ "main", "master" ]
-  workflow_dispatch: # מאפשר הרצה ידנית בלחיצת כפתור ב-GitHub
+  workflow_dispatch: # מאפשר הרצה ידנית מתוך לשונית Actions ב-GitHub
 
 jobs:
   build-windows:
